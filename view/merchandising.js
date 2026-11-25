@@ -139,5 +139,5 @@
   document.querySelector('#close-dialog').addEventListener('click', () => dialog.close());
   dialog.addEventListener('close', () => { ++ultimoDetalle; });
   dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
-  loadProducts();
+  void loadProducts();
 })();
